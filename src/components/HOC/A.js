@@ -26,14 +26,10 @@ function A(Template){
             <Template
               userAge="20"
               {...otherProps}
-              ref={this.refc.bind(this)}
               {...newProps}
             ></Template>
           </AComponent>
         )
-      }
-      refc(instance){
-        instance.getName && console.log(instance.getName())
       }
       handleInputChange=(e)=>{
         this.setState({

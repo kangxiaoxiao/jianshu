@@ -1,7 +1,7 @@
 /**
  * Created by karila on 2019/3/6.
  */
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import {
   HomeWrapper
 } from "./style";
@@ -11,7 +11,7 @@ import Modal from "../../components/modal"
 import B from "../../components/HOC/B.js"
 import C from "../../components/HOC/C.js"
 import D from "../../components/HOC/D.js"
-
+import Header from "../../common/header"
 function Repeat(props) {
   let items = [];
   for (let i = 0; i < props.numTimes; i++) {
@@ -27,7 +27,7 @@ function ListOfTenThings() {
     </Repeat>
   );
 }
-class Home extends PureComponent {
+class Home extends Component {
   constructor(props){
     super(props);
     this.state={
@@ -135,4 +135,4 @@ class Home extends PureComponent {
 }
 
 
-export default Home;
+export default Header(Home);

@@ -1,7 +1,7 @@
 /**
  * Created by karila on 2019/3/6.
  */
-import React,{PureComponent} from "react";
+import React,{Component} from "react";
 import {connect} from "react-redux";
 import {actionCreators} from "../../common/header/store"
 import {
@@ -9,7 +9,7 @@ import {
   TagTitle,
   TagItem,
 } from "./style"
-class Tags extends PureComponent{
+class Tags extends Component{
   getTagItem(){
     const { isFocus,tagsList,tagPage,mouseIn,handlePageChange} = this.props;
     if(isFocus || mouseIn){

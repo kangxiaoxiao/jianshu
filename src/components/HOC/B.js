@@ -4,9 +4,6 @@
 import React,{Component} from "react";
 import A from "./A.js"
 class B extends Component{
-  getName(){
-    return "我是B组件"
-  }
   render(){
     return (
       <div>

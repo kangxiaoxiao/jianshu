@@ -1,10 +1,10 @@
 /**
  * Created by karila on 2019/3/13.
  */
-import {PureComponent} from "react";
+import {Component} from "react";
 import ReactDOM from 'react-dom';
 const rootEl=document.body;
-class Modal extends PureComponent{
+class Modal extends Component{
   constructor(props){
     super(props);
     this.el=document.createElement("div");

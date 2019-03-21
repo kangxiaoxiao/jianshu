@@ -1,7 +1,7 @@
 /**
  * Created by karila on 2019/3/15.
  */
-import React,{Component} from "react";
+import React from  "react";
 import {
   AComponent
 } from "./style";
